@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff") format("woff"),
+    url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: 15px;
+  appearance: none;
+  outline: 0;
+}
+body {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #dbdada;
+  color: #2b2b2b;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+h1{
+    font-size: 31px;
+}
+h1 span{
+    color: rgb(91, 29, 199);
+    font-size: 34px;
+    text-decoration: underline;
+}
+.slider{
+    width: 1080px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0,5s ease-in;
+}
+.slides{
+    padding: 33px 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: absolute;
+    left: 15px;
+
+}
+.card {
+  color: #fff;
+  max-width: 250px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+  border-radius: 13px 13px 13px 13px;
+  background-color: rgb(91, 29, 199);
+  position: relative;
+  box-shadow: 0px 4px 24px grey;
+}
+.card .card-header {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  border-radius: 0px 0px 13px 13px;
+  width: 100%;
+}
+.card .card-header h3 {
+  font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+h3 i{
+    font-size: 20px;
+}
+.card .card-header h3:hover{
+    margin-left: 17px;
+    transition: all 0.5s ease;
+}
+.card .logo-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+.card .logo-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .card-content {
+  color: grey;
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  text-align: center;
+  border-radius: 0px 30px 13px 13px;
+  background-color: #fff;
+  position: relative;
+  padding: 10px;
+}
+
+.icons {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.icons-wrapper {
+  padding: 10px 0px;
+}
+.icons-wrapper a {
+  width: 14px;
+}
+.icons-wrapper i {
+  font-size: 17px;
+  padding: 5px;
+  border: 1px solid rgb(91, 29, 199);
+  border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.icons .icons-wrapper i:hover {
+  background-color: rgb(91, 29, 199);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.icons .icons-wrapper i:hover {
+  margin-left: 17px;
+}
